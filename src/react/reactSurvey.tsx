@@ -48,7 +48,6 @@ export class Survey extends SurveyElementBase implements ISurveyCreator {
   }
   componentDidMount() {
     var el = this.refs["root"];
-    if (el && this.survey) this.survey.doAfterRenderSurvey(el);
     if (this.survey) {
       this.survey.startTimerFromUI();
     }
